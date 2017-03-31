@@ -41,7 +41,7 @@ MaxFiles=25
 # The path to the download directory can be changed.
 # This will be in the StorageDir.  Default is original/collected
 
-DownloadPath=original/attachments
+DownloadPath=var/enterate/storage/original
 
 [Security]
 #This defines whether the uploading user can see the full path of the file

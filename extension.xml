@@ -2,10 +2,10 @@
 <software>
     <metadata>
         <name>Enhanced eZBinary File Type</name>
-        <version>4.4.0</version>
-        <copyright>Copyright (C) 2010 Contactivity, 1999-2010 eZ Systems AS</copyright>
+        <version>4.5</version>
+        <copyright>Copyright (C) 2012 Leiden Tech</copyright>
         <license>GNU General Public License v2.0</license>
-        <info_url>http://projects.ez.no/enhancedezbinaryfile</info_url>
+        <info_url>https://github.com/leidentech/enhancedezbinaryfile</info_url>
     </metadata>
 
 </software>

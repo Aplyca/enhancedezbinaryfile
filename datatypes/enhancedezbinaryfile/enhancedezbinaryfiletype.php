@@ -3,9 +3,9 @@
 // Definition of EnhancedeZBinaryFileType class
 //
 // SOFTWARE NAME: eZ Publish
-// SOFTWARE RELEASE: 4.4.0
+// SOFTWARE RELEASE: 4.5.0
 // BUILD VERSION: 21995
-// COPYRIGHT NOTICE: Copyright (C) 1999-2010 Contactivity.com
+// COPYRIGHT NOTICE: Copyright (C) 1999-2012 Leiden Tech
 // SOFTWARE LICENSE: GNU General Public License v2.0
 // NOTICE: >
 //   This program is free software; you can redistribute it and/or
@@ -36,9 +36,9 @@ class EnhancedeZBinaryFileType extends eZDataType
     const MAX_FILESIZE_FIELD = 'data_int1';
     const MAX_FILESIZE_VARIABLE = '_enhancedezbinaryfile_max_filesize_';
     const DATA_TYPE_STRING = "enhancedezbinaryfile";
-
+    
     /*!
-     Construction of the class, note that the second parameter in eZDataType
+     Construction of the class, note that the second parameter in eZDataType 
      is the actual name showed in the datatype dropdown list.
     */
     function __construct()
@@ -335,7 +335,6 @@ class EnhancedeZBinaryFileType extends eZDataType
                                            $contentObjectAttribute->attribute( 'version' ) );
         if ( is_object( $binaryFile ) )
             $value = $binaryFile->attribute( $name );
-
         return $value;
     }
 
@@ -400,7 +399,7 @@ class EnhancedeZBinaryFileType extends eZDataType
 		$contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes','Failed to store file. Only the following file types are allowed: %1.' ), implode(", ",$allowed) );
 		return eZInputValidator::STATE_INVALID;
 	}
-
+ 
         //$contentObjectAttribute->setContent( $binaryFile );
 
         if ( $binaryFile instanceof eZHTTPFile )
@@ -526,12 +525,12 @@ class EnhancedeZBinaryFileType extends eZDataType
 		return eZInputValidator::STATE_INVALID;
 	}
 
-	//Check size
+	//Check size 
 	$mustUpload = false;
         $maxSize = 1024 * 1024 * $classAttribute->attribute( self::MAX_FILESIZE_FIELD );
 
 /* Since it is not an ezbinary file this can never be true
-   unfortunately, this is where the check would be to not upload the file
+   unfortunately, this is where the check would be to not upload the file 
    multiple times in the event the form fails somewhere.  Unfortunately it
    can't be a binary file since it is a collection object and not a content
    object.
@@ -646,7 +645,9 @@ class EnhancedeZBinaryFileType extends eZDataType
             $charset = eZCharsetInfo::realCharsetCode( $charset );
         }
         $domString = $domDocument->saveXML();
-        return $domString;
+        $xml = simplexml_load_string($domString);
+        $domJson = json_encode($xml);
+        return $domJson;
     }
 
     function metaData( $contentObjectAttribute )

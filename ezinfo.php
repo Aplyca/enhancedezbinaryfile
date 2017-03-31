@@ -2,8 +2,8 @@
 //
 // ## BEGIN COPYRIGHT, LICENSE AND WARRANTY NOTICE ##
 // SOFTWARE NAME: enhancedezbinaryfile
-// SOFTWARE RELEASE: 4.0.0
-// COPYRIGHT NOTICE: Copyright (C) 2008 Contactivity B.V.
+// SOFTWARE RELEASE: 4.5
+// COPYRIGHT NOTICE: Copyright (C) 2008 Leiden Tech
 // SOFTWARE LICENSE: GNU General Public License v2.0
 // NOTICE: >
 
@@ -43,9 +43,9 @@ class enhancedezbinaryfileInfo
     {
         return array(
             'Name' => "enhancedezbinaryfile",
-            'Version' => "4.4.0",
-            'Copyright' => "Copyright (c) 2010 Contactivity B.V.",
-            'Info_url' => "http://www.contactivity.com",
+            'Version' => "4.5.0",
+            'Copyright' => "Copyright (c) 2011 Leiden Tech",
+            'Info_url' => "http://www.leidentech.com",
             'License' => "GNU General Public License v2.0"
 	);
     }

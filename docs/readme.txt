@@ -1,9 +1,12 @@
-/*
+enhancedezbinaryfile
+====================
+
+The Enhanced eZBinaryfile datatype makes it possible to use the information collector functionality to allow (anonymous) users to send/upload files as attachments.  If mail is enabled for the information collector, the file is sent as a multipart MIME attachment./*
     Enhanced eZBinaryfile for eZ publish 4.0+
     Developed by Steven E. Bailey and Sebastiaan van der Vliet
-    Contactivity bv, Leiden the Netherlands
+    Leiden Tech, Leiden the Netherlands
     
-    http://www.contactivity.com, info@contactivity.com
+    http://www.leidentech.com, info@leidentech.com
     
 
     This file may be distributed and/or modified under the terms of the
@@ -55,7 +58,7 @@ The datatype has the following limitations and bugs:
 5. Feedback
 --------------------------------
 Please send all your remarks, comments and suggestions for improvement to
-info@contactivity.com.
+info@leidentech.com.
 
 
 6. Disclaimer
